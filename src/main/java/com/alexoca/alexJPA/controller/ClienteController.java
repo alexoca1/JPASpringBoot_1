@@ -36,7 +36,7 @@ public ResponseEntity<Cliente> findbyId(@PathVariable("id") Integer idCliente) t
     Cliente cliente = clienteService.findById(idCliente);
     if(cliente == null){
 
-        throw new ModelNotFoundException("cliente no encontrado"+"UUUUUUUUUUUUUUUU");
+        throw new ModelNotFoundException("cliente no encontrado"+"HHHHHHHHHHHh");
     }
 
         return new ResponseEntity<>(cliente,HttpStatus.OK);
